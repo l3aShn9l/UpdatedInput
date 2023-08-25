@@ -1,0 +1,94 @@
+[bootstrap]
+main_collection = /example/example.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 600
+height = 900
+display_profiles = /example/custom.display_profilesc
+dynamic_orientation = 1
+high_dpi = 1
+
+[project]
+title = druid
+version = 0.11.0
+publisher = Insality
+developer = Insality
+dependencies#0 = https://github.com/insalitygames/deftest/archive/master.zip
+dependencies#1 = https://github.com/britzl/monarch/archive/refs/tags/3.3.0.zip
+
+[library]
+include_dirs = druid
+
+[input]
+gamepads = /builtins/input/default.gamepadsc
+use_accelerometer = 0
+
+[druid]
+no_auto_input = 0
+no_stencil_check = 0
+no_auto_template = 0
+input_text = text
+input_touch = touch
+input_marked_text = marked_text
+input_key_esc = key_esc
+input_key_back = key_back
+input_key_enter = key_enter
+input_key_backspace = key_backspace
+input_multitouch = touch_multi
+input_scroll_up = mouse_wheel_up
+input_scroll_down = mouse_wheel_down
+
+[html5]
+engine_arguments = --verify-graphics-calls=false
+heap_size = 64
+splash_image = /media/druid_logo.png
+scale_mode = fit
+show_fullscreen_button = 0
+show_made_with_defold = 0
+cssfile = /example/light_theme.css
+
+[native_extension]
+app_manifest = /example/game.appmanifest
+
+[graphics]
+texture_profiles = /example/custom.texture_profiles
+max_draw_calls = 128
+verify_graphics_calls = 0
+
+[android]
+package = com.insality.druid
+input_method = HiddenInputField
+
+[factory]
+max_count = 16
+
+[label]
+max_count = 0
+
+[mesh]
+max_count = 0
+
+[model]
+max_count = 0
+
+[particle_fx]
+max_count = 0
+max_emitter_count = 0
+max_particle_count = 0
+
+[sprite]
+max_count = 16
+
+[tilemap]
+max_count = 0
+max_tile_count = 0
+
+[collectionfactory]
+max_count = 64
+
+[collection]
+max_instances = 128
+
